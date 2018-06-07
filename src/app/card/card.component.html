@@ -1,0 +1,97 @@
+<!--card form start-->
+<div class="container">
+  <div id="outer">
+    <div id="inner">
+      <h2 class="text-center">Kartvizit Oluştur</h2><hr>
+    <form class="go-right">
+          <div class="form-group">
+            <input name="name" type="text" [(ngModel)]="name" class="form-control" required>
+            <label for="name">Adı Soyadı</label>
+          </div>
+          <div class="form-group">
+            <input name="company" type="text" [(ngModel)]="companyName" class="form-control" required>
+            <label for="company">Şirket Adı</label>
+          </div>
+          <div class="form-group">
+            <input name="phone" type="tel" [(ngModel)]="phone" class="form-control" required>
+            <label for="phone">Telefonu</label>
+          </div>
+          <div class="form-group">
+            <input name="email" type="email" [(ngModel)]="email" class="form-control" required>
+            <label for="email">E-mail</label>
+          </div> 
+          <div class="form-group">
+              <textarea name="address" [(ngModel)]="address" class="form-control" required></textarea>
+              <label for="address">Adresi</label>
+          </div>                                                     
+    </form>
+    </div>
+  </div>
+</div>
+<!--card form finish-->
+<br>
+<!--card design start-->
+<div class="container">
+<div id="outer">  
+  <div id="inner">
+    <div class="card bg-dark text-white mb-3" style="width: 340px; height: 192px;">
+      <div id="zero">
+          <img class="card-img" src="assets/image/kartvizit1.jpg" width="340" height="190" alt="Card image">
+          <div class="card-img-overlay">
+            <label class="text-left">{{name}}</label><label class="float-right text-uppercase">{{companyName}}</label><br>
+            <small class="card-text">{{phone}}</small><br>
+            <small class="card-text">{{email}}</small><br><br>
+            <small class="card-text">{{address}}</small>
+          </div>
+      </div>
+    </div>
+    <div class="card bg-dark text-white mb-3" style="width: 340px; height: 192px;">
+        <div id="zero">
+            <img class="card-img" src="assets/image/kartvizit2.jpg" width="340" height="190" alt="Card image">
+            <div class="card-img-overlay">
+              <label class="float-right">{{companyName}}</label><br><br><small class="text-left">{{name}}</small><br>
+              <small class="card-text">{{phone}}</small><br>
+              <small class="card-text">{{email}}</small><br><br>
+              <small class="card-text">{{address}}</small>
+            </div>
+        </div>
+    </div>
+    <div class="card bg-dark text-white mb-3" style="width: 340px; height: 192px;">
+        <div id="zero">
+            <img class="card-img" src="assets/image/kartvizit3.png" width="340" height="190" alt="Card image">
+            <div class="card-img-overlay">
+              <h3 class="float-right text-uppercase">{{companyName}}</h3><br><br>
+              <label class="float-right text-uppercase font-italic">{{name}}</label><br>
+              <small class="card-text">{{phone}}</small><br>
+              <small class="card-text">{{email}}</small><br><br>
+              <small class="card-text float-left">{{address}}</small>
+            </div>
+        </div>
+    </div>
+    <div class="card bg-dark text-dark mb-3" style="width: 340px; height: 192px;">
+        <div>
+            <img class="card-img" src="assets/image/kartvizit4.jpg" width="340" height="190" alt="Card image">
+            <div class="card-img-overlay">
+              <h3 class="">{{companyName}}</h3>
+              <small class="float-left font-weight-bold">{{name}}</small><br>
+              <small class="card-text float-left">{{phone}}</small><br>
+              <small class="card-text float-left">{{email}}</small><br><hr>
+              <small class="card-text">{{address}}</small>
+            </div>
+        </div>
+    </div>
+    <div class="card bg-dark text-dark mt-3" style="width: 340px; height: 192px;">
+        <div id="zero">
+            <img class="card-img" src="assets/image/kartvizit5.jpg" width="340" height="190" alt="Card image">
+            <div class="card-img-overlay">
+              <label class="text-left text-uppercase font-weight-bold">{{name}}</label><label class="float-right text-uppercase">{{companyName}}</label><br><br>
+              <small class="card-text">{{phone}}</small><br>
+              <small class="card-text">{{email}}</small><br><br>
+              <small class="text-white card-text">{{address}}</small>
+            </div>
+        </div>
+    </div>
+  </div>
+</div>
+</div>
+<!--card design finish-->
